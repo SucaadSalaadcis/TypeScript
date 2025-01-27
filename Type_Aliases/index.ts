@@ -1,7 +1,25 @@
-/* type: A TypeScript keyword used to define a custom type or alias. It’s like creating your own data structure to specify the shape of objects.
-User: The name of the type. It's capitalized (by convention) because it represents a model or blueprint. */
+
+// A type alias in TypeScript is a way to give a name to a type. Instead of writing the same type repeatedly, you can define it once using a type alias and reuse it wherever needed. 
+type Age = number;
+const myAge: Age = 25; // 'Age' is just a nickname for 'number'
+
+// example 2
+type person = {
+    name: string;
+    age: number;
+};
+
+const user: person = {
+    name: "Alex",
+    age: 30,
+};
+// Without the alias, you’d have to repeatedly write:
+const user2: { name: string; age: number } = { name: "Alex", age: 30 };
 
 
+
+// example 3
+// User: The name of the type. It's capitalized (by convention) because it represents a model or blueprint.
 type User = {
     name: string;
     age: number;
@@ -12,8 +30,8 @@ type User = {
 :: Specifies the type for the User parameter.
 User: This refers to the custom type we defined earlier. It ensures the parameter must match the User structure. */
 
-const printUserInfo = (User: User) => {
-    return `Name: ${User.name} Age: ${User.age} Location: ${User.location}`
+const printUserInfo = (user: User) => {
+    return `Name: ${user.name} Age: ${user.age} Location: ${user.location}`
 }
 
 const res3 = printUserInfo({ name: 'Alex', age: 20, location: 'Dubai' });
@@ -28,12 +46,12 @@ type User2 = {
     email: string;
 };
 
-const user: User2 = {
+const user3: User2 = {
     name: "Alex",
     age: 25,
     email: "alex@example.com",
 };
-console.log(user);
+console.log(user3);
 
 // arrays 
 type StringArray = string[];
