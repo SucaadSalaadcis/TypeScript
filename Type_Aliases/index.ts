@@ -70,3 +70,10 @@ type ID = string | number;
 const userId: ID = 123; // Can be a string or number
 const postId: ID = "post_456"; // Works as well
 console.log(userId, postId);
+
+// function  type 
+type Add = (a: number, b: number) => number;
+
+const addNumbers: Add = (x, y) => x + y;
+
+console.log(addNumbers(10, 20)); // Output: 30
