@@ -1,6 +1,7 @@
 
 /* A function with a void return type is not allowed to return anything.
- If you try to return a value, TypeScript will throw an error. */
+ If you try to return a value, TypeScript will throw an error. 
+ */
 
 
 /* function printName(name: string) {
