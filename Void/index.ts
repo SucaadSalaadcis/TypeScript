@@ -4,7 +4,8 @@
  */
 
 
-/* function printName(name: string) {
+/*
+function printName(name: string) {
    console.log(`Hello, ${name}!`);
    // If you don't explicitly specify a return type for a function, 
    // TypeScript will infer void if there is no return statement in the function.  
