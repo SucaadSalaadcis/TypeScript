@@ -8,12 +8,12 @@ console.log(string);
 
 const items: string[] = [];
 items.push('apple', 'mango', 'strawberry', 'milk');
-// items.push(12); //  error : type 'number' is not assignable to parameter of type 'string'.
+// items.push(12); //  error : type 'number' is not assignable to parameter of type 'string'
 console.log(items);
 
 const numList: number[] = [];
 numList.push(12);
-// numList.push(true); // error:  type 'boolean' is not assignable to parameter of type 'number'.
+// numList.push(true); // error:  type 'boolean' is not assignable to parameter of type 'number'
 console.log(numList);
 
 // another way of creating array
