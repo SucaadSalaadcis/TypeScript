@@ -1,4 +1,4 @@
-// const nums: number[] = [1, 2, 'string', true]; error b/c you alrealy mention the type of array
+// const nums: number[] = [1, 2, 'string', true];  error b/c you alrealy mention the type of array
 const nums: number[] = [1, 2, 4, 6];
 console.log(nums);
 
