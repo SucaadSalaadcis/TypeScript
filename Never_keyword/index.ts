@@ -3,7 +3,8 @@
 /*     This indicates that the function will never successfully complete its execution. It either throws an error or causes the program to exit in some way.
     throw new Error(msg);
     This line throws an error with the message msg.
-    Since the function throws an error, it doesn't return a value and immediately halts execution.  */
+    Since the function throws an error, it doesn't return a value and immediately halts execution. 
+    */
     
 function throwError(msg: string): never {
     // This function throws an error and does not return any value
